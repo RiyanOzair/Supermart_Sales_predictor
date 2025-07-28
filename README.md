@@ -1,10 +1,10 @@
-# 📊 Sales Performance Analysis — Exploratory Data Analysis & Machine Learning
+#  Sales Performance Analysis — Exploratory Data Analysis & Machine Learning
 
 This project performs a complete **Exploratory Data Analysis (EDA)** and builds a **sales prediction model** using a cleaned and feature-engineered version of the *Global Superstore* dataset.
 
 ---
 
-## 🚀 Project Objective
+##  Project Objective
 
 - Analyze sales data to uncover patterns, trends, and actionable business insights.
 - Build a predictive model to estimate **Sales** using features like **Profit**, **Discount**, **Category**, **Region**, **Days to Ship**, etc.
@@ -12,7 +12,7 @@ This project performs a complete **Exploratory Data Analysis (EDA)** and builds 
 
 ---
 
-## 📂 Dataset Overview
+##  Dataset Overview
 
 Dataset: `Sales_Superstore.csv`  
 Source: Kaggle / Global Superstore  
@@ -25,22 +25,22 @@ Features include:
 
 ---
 
-## 🔍 Tasks Performed
+##  Tasks Performed
 
-### ✅ Data Cleaning
+###  Data Cleaning
 - Removed duplicates and missing values
 - Handled outliers using **IQR method**
 - Encoded categorical features using **One-Hot Encoding**
 - Removed high-cardinality features like Customer Name and Product Name
 
-### ✅ Feature Engineering
+###  Feature Engineering
 - Extracted:
   - `Order Year`, `Order Month`, `Order Weekday`
   - `Is Weekend`
   - `Days to Ship` (calculated from Order and Ship Dates)
 - Created interaction terms: `Profit * Discount`, `Quantity * Discount`
 
-### ✅ Exploratory Data Analysis (EDA)
+###  Exploratory Data Analysis (EDA)
 - **Heatmap** of feature correlation
 - **Histograms** & **boxplots** for numerical features
 - **Sales trends over time**
@@ -49,16 +49,16 @@ Features include:
 
 ---
 
-## 🧠 Modeling
+##  Modeling
 
-### ✅ Models Used
+###  Models Used
 - **Linear Regression** (baseline)
 - **Random Forest Regressor** (tuned)
 - **XGBoost Regressor**
 - **LightGBM Regressor**
 - **Ensembled predictions**
 
-### ✅ Performance Metrics
+###  Performance Metrics
 - **R² Score**: ~0.67 (Random Forest tuned)
 - **MSE**: Low and stable
 - **Log-transformation** applied to improve predictions on skewed targets
